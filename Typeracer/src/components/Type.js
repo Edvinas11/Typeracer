@@ -75,6 +75,7 @@ function Type() {
     
     const fetchParagraphText = async (gamemode) => {
         console.log("This is the gamemode! " + gamemode);
+        
         let response = await fetch('/Home/GetParagraphText/', {
             method: 'POST',
             headers: {

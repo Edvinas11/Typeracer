@@ -4,20 +4,23 @@
     justify-content: center;
     align-items: center;
     font-family: "Courier Prime";
+    color: black; /* Changed from white to black */
 }
 
 .title-container {
     margin-top: 70px;
     font-size: 80px;
     margin-bottom: 50px;
+    color: black; /* Added to ensure title is black */
 }
 
 .game-start-title {
     margin-bottom: 0;
+    color: black; /* Added to ensure title is black */
 }
 
 .input-container {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .input-box {
@@ -27,13 +30,16 @@
     border-style: solid;
     border-color: black;
     border-radius: 5px;
+    font-family: "Courier Prime";
+    color: black; /* Ensures input text is black */
 }
 
 .dropdown-container {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 20px;
+    color: black; /* Added for dropdown label */
 }
 
 .custom-dropdown {
@@ -49,6 +55,7 @@
     font-size: 20px;
     border: 1px solid black;
     border-radius: 5px;
+    color: black;
 }
 
 .selected-option:hover {
@@ -73,6 +80,7 @@
 .dropdown-options li {
     padding: 3px;
     cursor: pointer;
+    color: black;
 }
 
 .dropdown-options li:hover {
@@ -80,17 +88,95 @@
     border-radius: 5px;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
 .start-game-button {
     font-size: 20px;
     background-color: rgb(11, 94, 215);
     opacity: 0.9;
-    color: white;
-    padding: 15px;
+    color: white; /* Keeping button text white for contrast */
+    padding: 15px 30px;
     border: none;
     border-radius: 10px;
     transition: opacity 0.15s;
+    font-family: "Courier Prime";
+    cursor: pointer;
+    width: 200px;
 }
 
-.start-game-button:hover{
+.start-game-button:hover {
     opacity: 1;
+}
+
+.guest-button {
+    font-size: 20px;
+    background-color: #666;
+    opacity: 0.9;
+    color: white; /* Keeping button text white for contrast */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.15s;
+    font-family: "Courier Prime";
+    cursor: pointer;
+    width: 200px;
+}
+
+.guest-button:hover {
+    opacity: 1;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: black; /* Added for profile info */
+}
+
+.profile-info strong {
+    color: black; /* Changed from #4CAF50 to black */
+}
+
+.logout-button {
+    font-size: 16px;
+    background-color: #ff4444;
+    color: white; /* Keeping button text white for contrast */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.15s;
+    font-family: "Courier Prime";
+}
+
+.logout-button:hover {
+    background-color: #cc0000;
+}
+
+.toggle-mode-button {
+    background: none;
+    border: none;
+    color: black; /* Changed from #aaa to black */
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: "Courier Prime";
+    transition: color 0.15s;
+}
+
+.toggle-mode-button:hover {
+    color: rgb(98, 98, 98); /* Dark gray on hover */
+}
+
+/* For the password input specifically */
+.input-box[type="password"] {
+    letter-spacing: 1px;
 }
